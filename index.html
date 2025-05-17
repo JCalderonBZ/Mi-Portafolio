@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>José Calderón</title>
+  
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/elegante.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        
+
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                
+                <img class="yo" src="/assets/images/yoe-removebg-preview.png" alt="Front" style="width:100%;height:125%;">
+                
+              </div>
+              
+              <div class="flip-card-back">
+                
+                <img class="yo" src="/assets/images/jc.png" alt="Back" style="width:100%;height:125%;">
+                
+                <style>
+                  .container {
+   display: flex;   
+   justify-content: center;
+   align-items: center;
+   gap: 20px;  
+    }
+
+    .loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgba(45, 45, 45, 1);
+    overflow: hidden;    
+    }
+
+    .loader::before{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(var(--clr), transparent);
+        animation: animate 1.5s linear infinite;
+    }
+
+    .loader::after {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        background: rgba(45, 45, 45, 0.9);
+    }
+
+    @keyframes animate {
+    0% {
+        transform: translate(-150px, -150px);
+    }    
+    25% {
+        transform: translate(0px, -150px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+    75% {
+        transform: translate(-150px, 0px);
+    }
+    100% {
+        transform: translate(-150px, -150px);
+    }
+    }
+                  .flip-card {
+                    
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    perspective: 1000px;
+                  }
+                  
+                  .flip-card-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    
+                  }
+                  
+                  .flip-card:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                    
+                  }
+                  
+                  .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 80%;
+                    backface-visibility: hidden;
+                    
+                  }
+                  
+                  .flip-card-front {
+                    background-color: none;
+                    
+                  }
+                  
+                  .flip-card-back {
+                    background-color: none;
+                    color: none;
+                    transform: rotateY(180deg);
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <div class="info-content">
+          
+          <h1 class="name" title=>José Calderón</h1>
+          
+          
+          
+          
+
+          <p class="title">Front-End Developer</p>
+        </div>
+        
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Ver Contactos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:josecalderon5030@gmail.com" class="contact-link">josecalderon5030@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:+50361440669" class="contact-link">(+503) 6144-0669</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/JCalderonBZ" class="contact-link">JCalderonBZ</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Locación</p>
+              <a href="https://maps.app.goo.gl/pQNBSxf9G7w444Dv9" class="contact-link">Usulutan, El Salvador</a>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jos%C3%A9-calder%C3%B3n-67a7b52b7/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon> 
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://discord.gg/haWY7BgW" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <!--li-- class="social-item">
+            <a href="https://www.instagram.com/jos3_calder0n?igsh=enpkMnBveGlhbzg2" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            
+          </!--li-->
+          
+
+        </ul>
+        <p class="nada"> Nada es imposible para el que lucha</p>
+        
+        
+
+      </div>
+      
+
+    </aside>
+    
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Acerca de mi</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Educación</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contacto</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="acerca de mi">
+
+        <header>
+          <h2 class="h2 article-title">Acerca de mi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hola!, mi nombre es Alfredo y soy Estudiante de Ingenieria en Sistemas y Redes Informaticas, también me dedico a la programación como Front-End Developer porque me gusta diseñar interfaces para las páginas web.
+          </p>
+          Pero también me dedico a las Bases de Datos, a la edición de videos y fotografías, de igual manera me dedico a trabajos fuera del area de tecnología.
+          <p>
+            
+         </head>
+         <div class="acceso">
+          <body>
+            <net>
+              <div class="acceso">
+                <body>
+             <a download="Currículum" onclick href="/Currículum Vitae.pdf" >CV <span>
+
+             </span>
+            </a>
+                
+             </net>
+            </body>
+          </div>
+            </style>
+          
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">A que me dedico</h3>
+          
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Diseño Web</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de diseños minimalistas para sitios web.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Web</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de sitios de buena calidad.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Aplicaciones Móbiles</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de aplicaciones para Android.
+                  
+                </p>
+                
+              </div>
+              
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Fotografías</h4>
+
+                <p class="service-item-text">
+                  Hago fotos de alta calidad y buena edición.
+                </p>
+                
+              </div>
+              
+            </li>
+            
+
+        </section>
+        <div class="traductor">
+        <body>
+          <span class="es">Español</span>
+          <input type="checkbox" class="check">
+          <span class="en">Inglés</span>
+          <script src="js/app.js"></script>
+          
+        </body>
+        </div>
+       
+
+        <body>
+          
+          
+      </body>
+
+
+        <div class="modal-container" data-modal-container>
+          
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+              </figure>
+
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        
+
+      </article>
+      
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="educación" data-page="educación">
+
+        <header>
+          <h2 class="h2 article-title">Educación</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Gerardo Barrios</h4>
+
+              <span>2021 — Presente</span>
+
+              <p class="timeline-text">
+                Ingenieria en Sistemas y Redes Informaticas.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Centro Técnico de Capacitación Contable</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Técnico Operador en Windows.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia Laboral</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Proyectos Luis Morales</h4>
+
+              <span>2024 — 2024</span>
+
+              <p class="timeline-text">
+                Compactador de superficies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Reparación de Teléfonos y Computadoras</h4>
+
+              <span>2014 — 2023</span>
+
+              <p class="timeline-text">
+                Reparo Teléfonos y Computadoras a domicilio.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ayudante en Albañileria</h4>
+
+              <span>2017 — 2024</span>
+
+              <p class="timeline-text">
+                Ayudante en construciones.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mis Habilidades</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Diseño Web</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Diseño Gráfico</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Edición de Imágenes</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portafolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todo</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Electrónica</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicaciones</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desarrollo Web</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Seleciona una Categoría</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todo</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Electrónica</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicaciones</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desarrollo Web</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="electrónica"> 
+              
+              <a href="https://www.tinkercad.com/things/b5jRwpN0yco-fabulous-lappi-sango">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/circuito.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Circuito led</h3>
+
+                <p class="project-category">Electrónica</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="electrónica">
+              <a href="https://www.tinkercad.com/things/0zJ1lkazSj0-epic-amur-duup">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/circuito 2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Circuito de medidas</h3>
+
+                <p class="project-category">Electrónica</p>
+
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="https://github.com/JCalderonBZ/Tarea_Tienda.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tc.png" alt="aplicaciones" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">App de comida adomicilio</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="https://github.com/JCalderonBZ/Parcial-1-progra-ll.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tcc.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calculadora</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="https://github.com/JCalderonBZ/Registro-de-Aeropuerto.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/R a.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Registro de Aeropuerto</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="aplicaciones">
+              <a href="https://github.com/JCalderonBZ/Chat_App.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/iniciochat.png" alt="aplicaciones" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">App para enviar mensajes</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="https://github.com/JCalderonBZ/Sistema-Escolar.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/S e.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sistema Escolar</h3>
+
+                <p class="project-category">Desarrollo Web</p>
+
+              </a>
+            </li>
+            
+
+            
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/setup.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">En Casa</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Zona de trabajo y también de gaming</h3>
+
+                  <p class="blog-text">
+                    Este es el lugar dónde realizo mis trabajos y también me relajo jugando video juegos.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/chambaa.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Trabajo</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Ene 05, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Trabajo de Compactado</h3>
+
+                  <p class="blog-text">
+                    Trabaje en la construccion de Plaza Mundo Usulutan con la empresa Proyectos Luis Morales.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/paisa.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Vacación</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dic 10, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Fotografías</h3>
+
+                  <p class="blog-text">
+                    Cuándo viajó me gusta tomar fotos de los paisajes.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+            
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contacto" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5490.063615976875!2d-88.42086755888788!3d13.34646843280637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ssv!4v1713670416331!5m2!1ses-419!2ssv"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulario de Contacto</h3>
+
+          <form action="https://formsubmit.co/josecalderon5030@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="Nombre Completo" class="form-input" placeholder="Nombre Completo" required data-form-input>
+
+              <input type="email" name="Email" class="form-input" placeholder="Correo Electronico" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Escribe tu Mensaje" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" value="enviar mensaje" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensaje</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <body>
+    <section id="reseñas">
+        <h2>Reseñas</h2>
+        <div class="contenedor-reseñas">
+            <div class="reseña">
+                <p>"Trabajar con José Calderón ha sido una experiencia increíble. Su dedicación y profesionalismo son incomparables."</p>
+                <p class="autor">- Abg. José Calderón</p>
+            </div>
+            <div class="reseña">
+                <p>"La creatividad y atención al detalle de José Calderón son impresionantes. Definitivamente lo recomendaría a otros."</p>
+                <p class="autor">- Licda. Corina Crúz Jueza Interina</p>
+            </div>
+            <div class="reseña">
+                <p>"José Calderón siempre entrega resultados excepcionales y supera las expectativas. Un verdadero profesional."</p>
+                <p class="autor">- Dr. Raúl Rodríguez</p>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#reseñas {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+    background-color: var(--bg-gradient-jet);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reseñas h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contenedor-reseñas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reseña {
+    background-color: #282727;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.reseña p {
+    margin: 0;
+    color: #d7d7d7;
+    font-style: italic;
+}
+
+.reseña .autor {
+    margin-top: 10px;
+    text-align: right;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+</style>
+</body>
+
+</html>
